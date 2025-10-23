@@ -1,0 +1,34 @@
+
+### **C. Create `package.json`**
+```json
+{
+  "name": "defendiq-enterprise",
+  "version": "10.0.0",
+  "description": "Enterprise Cybersecurity Training & Compliance Platform with AI-Powered Security",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -p 8000",
+    "dev": "live-server --port=8000",
+    "build": "echo 'No build process needed for static HTML'",
+    "deploy": "echo 'Add deployment commands here'"
+  },
+  "keywords": [
+    "cybersecurity",
+    "training",
+    "compliance",
+    "ai",
+    "pwa",
+    "zero-trust",
+    "incident-response"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/defendiq-enterprise.git"
+  }
+}
