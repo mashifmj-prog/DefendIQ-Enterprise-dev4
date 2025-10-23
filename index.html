@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DefendIQ Enterprise - Cybersecurity Platform</title>
+    <meta name="description" content="Enterprise Cybersecurity Training, Compliance & AI-Powered Security">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+            color: white;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .logo {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #00b0ff, #ff4081);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .subtitle {
+            font-size: 1.5rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+        
+        .phases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+        
+        .phase-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .phase-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+            border-color: #00b0ff;
+        }
+        
+        .phase-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .phase-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #00b0ff, #ff4081);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+        
+        .phase-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        
+        .phase-badge {
+            background: #00b0ff;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-left: auto;
+        }
+        
+        .phase-description {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+        
+        .phase-features {
+            list-style: none;
+            margin-bottom: 15px;
+        }
+        
+        .phase-features li {
+            padding: 5px 0;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .phase-features li::before {
+            content: "✓";
+            color: #00b0ff;
+            font-weight: bold;
+        }
+        
+        .view-btn {
+            background: linear-gradient(135deg, #00b0ff, #ff4081);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            width: 100%;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+        
+        .view-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 176, 255, 0.4);
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .phases-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">🛡️</div>
+            <h1 class="title">DefendIQ Enterprise</h1>
+            <p class="subtitle">Complete Cybersecurity Training & Compliance Platform</p>
+        </div>
+
+        <div class="phases-grid">
+            <!-- Phase 1 -->
+            <div class="phase-card">
+                <div class="phase-header">
+                    <div class="phase-icon">1</div>
+                    <div class="phase-title">Foundation Core</div>
+                    <div class="phase-badge">Phase 1</div>
+                </div>
+                <p class="phase-description">Core training platform with certificates and basic AI assistant</p>
+                <ul class="phase-features">
+                    <li>Training Module System</li>
+                    <li>Certificate Management</li>
+                    <li>Basic ZaraAI Integration</li>
+                    <li>Progress Tracking</li>
+                </ul>
+                <a href="phases/phase1-foundation.html" class="view-btn">View Phase 1</a>
+            </div>
+
+            <!-- Phase 2 -->
+            <div class="phase-card">
+                <div class="phase-header">
+                    <div class="phase-icon">2</div>
+                    <div class="phase-title">Compliance Automation</div>
+                    <div class="phase-badge">Phase 2</div>
+                </div>
+                <p class="phase-description">Automated compliance workflows and policy management</p>
+                <ul class="phase-features">
+                    <li>AUP System</li>
+                    <li>Contractor Workflows</li>
+                    <li>Escalation System</li>
+                    <li>Compliance Tracking</li>
+                </ul>
+                <a href="phases/phase2-compliance.html" class="view-btn">View Phase 2</a>
+            </div>
+
+            <!-- Phase 3 -->
+            <div class="phase-card">
+                <div class="phase-header">
+                    <div class="phase-icon">3</div>
+                    <div class="phase-title">Analytics & Reporting</div>
+                    <div class="phase-badge">Phase 3</div>
+                </div>
+                <p class="phase-description">Advanced analytics, risk scoring and predictive AI</p>
+                <ul class="phase-features">
+                    <li>Risk Scoring Engine</li>
+                    <li>Predictive Analytics</li>
+                    <li>Advanced Dashboards</li>
+                    <li>Custom Reporting</li>
+                </ul>
+                <a href="phases/phase3-analytics.html" class="view-btn">View Phase 3</a>
+            </div>
+
+            <!-- Phase 4 -->
+            <div class="phase-card">
+                <div class="phase-header">
+                    <div class="phase-icon">4</div>
+                    <div class="phase-title">Mobile & Offline</div>
+                    <div class="phase-badge">Phase 4</div>
+                </div>
+                <p class="phase-description">PWA with offline capabilities and mobile optimization</p>
+                <ul class="phase-features">
+                    <li>Progressive Web App</li>
+                    <li>Offline Training</li>
+                    <li>Mobile Certificate Manager</li>
+                    <li>Touch-Optimized UI</li>
+                </ul>
+                <a href="phases/phase4-mobile-pwa.html" class="view-btn">View Phase 4</a>
+            </div>
+
+            <!-- Phase 5 -->
+            <div class="phase-card">
+                <div class="phase-header">
+                    <div class="phase-icon">5</div>
+                    <div class="phase-title">ZaraAI Sentinel</div>
+                    <div class="phase-badge">Phase 5</div>
+                </div>
+                <p class="phase-description">Advanced AI with NLP and predictive threat intelligence</p>
+                <ul class="phase-features">
+                    <li>Natural Language Processing</li>
+                    <li>Predictive Threat Intel</li>
+                    <li>Enhanced Chat Interface</li>
+                    <li>Security Risk Assessment</li>
+                </ul>
+                <a href="phases/phase5-zaraai-sentinel.html" class="view-btn">View Phase 5</a>
+            </div>
+
+            <!-- Phase 6 -->
+            <div class="phase-card">
+                <div class="phase-header">
+                    <div class="phase-icon">6</div>
+                    <div class="phase-title">Guardian Nexus</div>
+                    <div class="phase-badge">Phase 6</div>
+                </div>
+                <p class="phase-description">Integration hub and automation workflow engine</p>
+                <ul class="phase-features">
+                    <li>API Gateway Management</li>
+                    <li>Third-Party Integrations</li>
+                    <li>Automation Workflows</li>
+                    <li>Data Connectors</li>
+                </ul>
+                <a href="phases/phase6-guardian-nexus.html" class="view-btn">View Phase 6</a>
+            </div>
+
+            <!-- Phase 7 -->
+            <div class="phase-card">
+                <div class="phase-header">
+                    <div class="phase-icon">7</div>
+                    <div class="phase-title">Quantum Shield</div>
+                    <div class="phase-badge">Phase 7</div>
+                </div>
+                <p class="phase-description">Quantum-resistant cryptography and advanced encryption</p>
+                <ul class="phase-features">
+                    <li>Post-Quantum Cryptography</li>
+                    <li>Quantum Key Distribution</li>
+                    <li>Advanced Encryption Matrix</li>
+                    <li>NIST Standard Compliance</li>
+                </ul>
+                <a href="phases/phase7-quantum-shield.html" class="view-btn">View Phase 7</a>
+            </div>
+
+            <!-- Phase 8 -->
+            <div class="phase-card">
+                <div class="phase-header">
+                    <div class="phase-icon">8</div>
+                    <div class="phase-title">OmniVision</div>
+                    <div class="phase-badge">Phase 8</div>
+                </div>
+                <p class="phase-description">360° threat visibility and real-time monitoring</p>
+                <ul class="phase-features">
+                    <li>Real-Time Threat Monitoring</li>
+                    <li>Global Incident Map</li>
+                    <li>Network Infrastructure Mapping</li>
+                    <li>Live Threat Intelligence</li>
+                </ul>
+                <a href="phases/phase8-omni-vision.html" class="view-btn">View Phase 8</a>
+            </div>
+
+            <!-- Phase 9 -->
+            <div class="phase-card">
+                <div class="phase-header">
+                    <div class="phase-icon">9</div>
+                    <div class="phase-title">Aegis Core</div>
+                    <div class="phase-badge">Phase 9</div>
+                </div>
+                <p class="phase-description">Zero-trust infrastructure and core protection</p>
+                <ul class="phase-features">
+                    <li>Zero-Trust Architecture</li>
+                    <li>Core Infrastructure Protection</li>
+                    <li>Policy Engine & Management</li>
+                    <li>Access Governance</li>
+                </ul>
+                <a href="phases/phase9-aegis-core.html" class="view-btn">View Phase 9</a>
+            </div>
+
+            <!-- Phase 10 -->
+            <div class="phase-card">
+                <div class="phase-header">
+                    <div class="phase-icon">10</div>
+                    <div class="phase-title">Phoenix Protocol</div>
+                    <div class="phase-badge">Phase 10</div>
+                </div>
+                <p class="phase-description">Advanced incident response and cyber resilience</p>
+                <ul class="phase-features">
+                    <li>Incident Response System</li>
+                    <li>Automated Playbooks</li>
+                    <li>Cyber Resilience Framework</li>
+                    <li>Recovery Timeline Management</li>
+                </ul>
+                <a href="phases/phase10-phoenix-protocol.html" class="view-btn">View Phase 10</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>DefendIQ Enterprise v10.0 | Complete Cybersecurity Platform</p>
+            <p>All 10 phases successfully implemented and ready for deployment</p>
+        </div>
+    </div>
+</body>
+</html>
